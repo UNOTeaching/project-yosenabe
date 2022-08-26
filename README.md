@@ -73,7 +73,7 @@ For this question we have to provide an encoding that moves all blocks into gray
 
 ## Question 2:
 
-To succed in this question, we need to ensure that at least one block is moved inside each area.
+To succed in this question, we need to ensure that at least one number is moved inside each area.
 
 ## Question 3:
 
