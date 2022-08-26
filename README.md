@@ -25,3 +25,29 @@ A number can be moved across an area. For instance, in our example the number 4 
 <p>
 You can play the game <a href="https://github.com/Advanced-Concepts-Programming-Languages/github-starter-course">here</a>. It is fun and it will help you to get used to the rules.
 </p>
+
+# Representation in ASP
+
+A Yosenabe puzzle is represented by facts of the following predicates:
+```
+cell(X,Y).         % the cell (X,Y) belongs to the grid
+area(X,Y,A).       % the cell (X,Y) belongs to area A
+number(X,Y,N).     % the cell (X,Y) initially contains number N
+goal(A,G).         % the goal number of area A is G
+```
+The example shown before is represented by the following facts:
+```
+cell(1,1).    cell(1,2). ...  cell(5,4).  cell(5,5).  number(1,5,5).
+area(1,1,1).  area(2,1,1).                goal(1,6).  number(3,1,1).
+area(2,3,2).  area(3,3,2).  area(4,3,2).              number(3,4,2).
+area(3,5,3).  area(4,5,3).  area(5,5,3).  goal(3,4).  number(4,2,4).
+area(5,1,4).                                          number(5,3,2).
+```
+A solution is represented by atoms of the predicate target/4:
+```
+target(X,Y,XX,YY).  % the number in the cell (X,Y) is moved to the cell (XX,YY)
+```
+The solution of the example consists of the following atoms:
+```
+target(1,5,1,1) target(3,1,2,1) target(3,4,3,3) target(4,2,4,5) target(5,3,5,1)
+```
