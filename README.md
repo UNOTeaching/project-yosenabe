@@ -75,10 +75,10 @@ For this question we have to provide an encoding that moves all blocks into gray
 
 To succed in this question, we need to ensure that at least one number is moved inside each area.
 
-## Question 3: (30 points)
+## Question 3: (25 points)
 
 For this question, we have ensure that the paths of any two moved numbers do not cross or meet at any grid cell.
 
-## Question 4: (20 points)
+## Question 4: (15 points)
 
 For this question, we have to consider the remaining rule of the game. Recall that you can sum the values of the numbers moved to an area using a **sum aggregate**. For more information about how to use and write sum aggregates, please check Section 3.1.12 (page 30) of the [Potassco guide](https://github.com/potassco/guide/releases/tag/v2.2.0).
