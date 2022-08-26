@@ -64,3 +64,28 @@ The content of the **main** branch of your GitHub repository at the time of the 
 Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of this directories may prevent your code to work or cause lost of your progress. 
 
 **Academic Dishonesty**: We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. Modifying the behavior of the autograder in any way is also cheating. We trust you all to submit your own work only and to do it in honest way; please don't let us down. If you do, we will pursue the strongest consequences available to us.
+
+Be sure to include a file called ```group.txt``` that contains the name of each of the components of the group in a different line (if you work alone just add your name in the first line).
+
+## Question 1: 4x4 Sudoku
+To begin with, you will represent a 4x4 Sudoku. Later you will modify it to handle the 9x9 case.
+
+### Question 1a (25 points):
+For this question, you should copy file sudoku.lp to sudoku1a.lp and modify the latter. You should fill the board with a number between 1 and 4 in each cell such that each column and each row contains all numbers between 1 and 4.
+
+The following command can be used to find all answer sets of a particular instance stored in file instance.lp:
+
+clingo sudoku.lp instance.lp 0
+
+To receive credit for this question, your code must correctly solve all instances in the folder instances/4x4. Solutions to this question can be found in the folder solutions/q1a.
+
+You can automatically test your code running
+
+python autograder.py --question=1a
+
+The timeout per instance is 100 seconds. This timeout also applies to the following questions.
+If the autograder tells you that your code does not correctly solve a particular instance, then you can check the expected solutions by checking the file
+
+```solutions/q1a/<instance>.json```
+
+Solutions for subsequent questions can be found by chaging the folder ```q1a``` for the corresponding question.
