@@ -67,25 +67,6 @@ Do not modify the file ```autograder.py``` nor any of the content of the directo
 
 Be sure to include a file called ```group.txt``` that contains the name of each of the components of the group in a different line (if you work alone just add your name in the first line).
 
-## Question 1: 4x4 Sudoku
-To begin with, you will represent a 4x4 Sudoku. Later you will modify it to handle the 9x9 case.
+## Question 1: Moving blocks into gray areas
 
-### Question 1a (25 points):
-For this question, you should copy file sudoku.lp to sudoku1a.lp and modify the latter. You should fill the board with a number between 1 and 4 in each cell such that each column and each row contains all numbers between 1 and 4.
-
-The following command can be used to find all answer sets of a particular instance stored in file instance.lp:
-
-clingo sudoku.lp instance.lp 0
-
-To receive credit for this question, your code must correctly solve all instances in the folder instances/4x4. Solutions to this question can be found in the folder solutions/q1a.
-
-You can automatically test your code running
-
-python autograder.py --question=1a
-
-The timeout per instance is 100 seconds. This timeout also applies to the following questions.
-If the autograder tells you that your code does not correctly solve a particular instance, then you can check the expected solutions by checking the file
-
-```solutions/q1a/<instance>.json```
-
-Solutions for subsequent questions can be found by chaging the folder ```q1a``` for the corresponding question.
+For this question you have to provide an encoding that moves all blocks into gray areas such that the movement of the block is made in straitgh line. We ignore for now the other restrictions of the game.
