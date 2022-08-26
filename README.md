@@ -6,8 +6,8 @@ In this assignment, you will develop a solver for the Japanese grid puzzle Yosen
 </p>
 Given such a grid, initially without arrows, the task is to move each number surrounded by a frame into one of the gray areas along a straight line, respecting the following conditions:
 <ul>
-  <li> The straight lines of any two moved numbers must not cross or meet at any grid cell.</li>
   <li> Each gray area must be populated with at least one moved number.</li>
+  <li> The straight lines of any two moved numbers must not cross or meet at any grid cell.</li>
   <li> An area may be associated with a positive goal number, shown within it. If this is the case, then the numbers moved into the area must sum up exactly to the goal number.</li>
 </ul>
 The unique solution of the example, indicated by the arrows of the image, fulfills these conditions:
@@ -69,4 +69,16 @@ Be sure to include a file called ```group.txt``` that contains the name of each 
 
 ## Question 1: Moving blocks into gray areas
 
-For this question you have to provide an encoding that moves all blocks into gray areas such that the movement of the block is made in straitgh line. We ignore for now the other restrictions of the game.
+For this question we have to provide an encoding that moves all blocks into gray areas such that the movement of the block is made in straitgh line. We ignore for now all the other restrictions of the game.
+
+## Question 2:
+
+To succed in this question, we need to ensure that at least one block is moved inside each area.
+
+## Question 3:
+
+For this question, we have ensure that the paths of any two moved numbers do not cross or meet at any grid cell.
+
+## Question 4:
+
+For this question, we have to consider the remaining rule of the game. Recall that you can sum the values of the numbers moved to an area using a **sum aggregate**. For more information about how to use and write sum aggregates, please check Section 3.1.12 (page 30) of the [Potassco guide](https://github.com/potassco/guide/releases/tag/v2.2.0).
