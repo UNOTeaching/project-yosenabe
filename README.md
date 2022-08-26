@@ -51,3 +51,16 @@ The solution of the example consists of the following atoms:
 ```
 target(1,5,1,1) target(3,1,2,1) target(3,4,3,3) target(4,2,4,5) target(5,3,5,1)
 ```
+
+## Formalities.
+You can work on the solution alone or in groups of two people. Different groups have to submit different solutions, in case of plagiarism all groups involved will fail the project.
+
+Your solution has to correctly encode all solutions for every instance. In fact, our test instances usually have several solutions. Your code will be autograded for technical correctness. However, the correctness of your implementation -- not the autograder's judgments -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.
+
+The content of the **main** branch of your GitHub repository at the time of the deadline will be considered your submission. Any modifications after deadline will be ignored. So will be any previous code that you committed before. Note that the autograder will give you the evaluation of your last commit, so be sure that it is what you expected.
+
+**Start as soon as possible to avoid running out of time.**
+
+Do not modify the file ```autograder.py``` nor any of the content of the directories ```.git```, ```.github```, ```img```, ```instances```, ```questions``` and ``` solutions```. Modifying some of this directories may prevent your code to work or cause lost of your progress. 
+
+**Academic Dishonesty**: We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. Modifying the behavior of the autograder in any way is also cheating. We trust you all to submit your own work only and to do it in honest way; please don't let us down. If you do, we will pursue the strongest consequences available to us.
