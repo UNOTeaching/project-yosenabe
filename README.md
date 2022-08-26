@@ -67,18 +67,18 @@ Do not modify the file ```autograder.py``` nor any of the content of the directo
 
 Be sure to include a file called ```group.txt``` that contains the name of each of the components of the group in a different line (if you work alone just add your name in the first line).
 
-## Question 1: Moving blocks into gray areas
+## Question 1: Moving blocks into gray areas (30 points)
 
 For this question we have to provide an encoding that moves all blocks into gray areas such that the movement of the block is made in straitgh line. We ignore for now all the other restrictions of the game.
 
-## Question 2:
+## Question 2: (20 points)
 
 To succed in this question, we need to ensure that at least one number is moved inside each area.
 
-## Question 3:
+## Question 3: (30 points)
 
 For this question, we have ensure that the paths of any two moved numbers do not cross or meet at any grid cell.
 
-## Question 4:
+## Question 4: (20 points)
 
 For this question, we have to consider the remaining rule of the game. Recall that you can sum the values of the numbers moved to an area using a **sum aggregate**. For more information about how to use and write sum aggregates, please check Section 3.1.12 (page 30) of the [Potassco guide](https://github.com/potassco/guide/releases/tag/v2.2.0).
