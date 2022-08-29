@@ -71,6 +71,25 @@ Be sure to include a file called ```group.txt``` that contains the name of each 
 
 For this question we have to provide an encoding that moves all blocks into gray areas such that the movement of the block is made in straitgh line. We ignore for now all the other restrictions of the game.
 
+Start by coping file ```yosenabe.lp``` to ```yosenabe1.lp``` and modify the latter.
+
+The following command can be used to find all answer sets of a particular instance stored in file ```instance.lp```:
+```sh
+clingo yosenabe1.lp instance.lp 0
+```
+To receive credit for this question, your code must correctly solve all instances in the folder instances/q1. Solutions to this question can be found in the folder solutions/q1.
+
+You can automatically test your code running
+```sh
+python autograder.py --question=1
+```
+The timeout per instance is 100 seconds. This timeout also applies to the following questions.
+If the autograder tells you that your code does not correctly solve a particular instance, then you can check the expected solutions by checking the file
+```sh
+solutions/q1/<instance>.json
+```
+Solutions for subsequent questions can be found by changing the folder ```q1``` for the corresponding question.
+
 ## Question 2: (20 points)
 
 To succed in this question, we need to ensure that at least one number is moved inside each area.
