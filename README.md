@@ -47,7 +47,7 @@ A solution is represented by atoms of the predicate target/4:
 ```
 target(X,Y,XX,YY).  % the number in the cell (X,Y) is moved to the cell (XX,YY)
 ```
-The solution of the example consists exactly on the following atoms:
+The solution of the example consists exactly in the following atoms:
 ```
 target(1,5,1,1) target(3,1,2,1) target(3,4,3,3) target(4,2,4,5) target(5,3,5,1)
 ```
