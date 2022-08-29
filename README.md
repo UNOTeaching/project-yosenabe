@@ -118,3 +118,5 @@ You can automatically test your code running
 ```sh
 python autograder.py --question=4
 ```
+
+**Be sure you have committed your changes, pushed them to the GitHub repository and see the grade you expected to receive in the Actions tab in GitHub.**
