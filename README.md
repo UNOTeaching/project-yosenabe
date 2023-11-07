@@ -23,7 +23,7 @@ Note that the displayed solution is unique. One could try to move the two number
 A number can be moved across an area. For instance, in our example the number 4 crosses the area in the middle. On the other hand, you may always assume that the move of a number stops at the first cell (with respect to its direction) of the area to which the number is moved. For instance, number 1 is moved to the cell (2,1), and there would be no solution if we moved it further into the area until the cell (1,1).
 </p>
 <p>
-You can play the game <a href="https://github.com/Advanced-Concepts-Programming-Languages/github-starter-course">here</a>. It is fun and it will help you to get used to the rules.
+You can play the game <a href="https://www.janko.at/Raetsel/Yosenabe/">here</a>. It is fun and it will help you to get used to the rules.
 </p>
 
 # Representation in ASP
