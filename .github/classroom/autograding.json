@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Question 0",
+      "setup": "",
+      "run": "ls group.txt",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Non empty group.txt",
+      "setup": "",
+      "run": "[ -s group.txt ]",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Question 1",
+      "setup": "conda install python=3.9 --yes; conda install -c potassco clingo=5.5.2 --yes; conda init",
+      "run": "/usr/share/miniconda/bin/python3.9 autograder.py --clingo /usr/share/miniconda/bin/clingo --question=1",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "Question 2",
+      "setup": "conda install python=3.9 --yes; conda install -c potassco clingo=5.5.2 --yes; conda init",
+      "run": "/usr/share/miniconda/bin/python3.9 autograder.py --clingo /usr/share/miniconda/bin/clingo --question=2",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Question 3",
+      "setup": "conda install python=3.9 --yes; conda install -c potassco clingo=5.5.2 --yes; conda init",
+      "run": "/usr/share/miniconda/bin/python3.9 autograder.py --clingo /usr/share/miniconda/bin/clingo --question=3",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Question 4",
+      "setup": "conda install python=3.9 --yes; conda install -c potassco clingo=5.5.2 --yes; conda init",
+      "run": "/usr/share/miniconda/bin/python3.9 autograder.py --clingo /usr/share/miniconda/bin/clingo --question=4",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
