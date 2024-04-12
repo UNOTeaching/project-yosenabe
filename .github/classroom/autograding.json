@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Question 0",
+      "name": "Question 0a: group.txt exists",
       "setup": "",
       "run": "ls group.txt",
       "input": "",
@@ -11,7 +11,7 @@
       "points": null
     },
     {
-      "name": "Non empty group.txt",
+      "name": "Question 0b: group.txt is not empty",
       "setup": "",
       "run": "[ -s group.txt ]",
       "input": "",
