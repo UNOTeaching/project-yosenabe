@@ -92,7 +92,6 @@ jobs:
         QUESTION-2_RESULTS:  "${{steps.question-2.outputs.result}}"
         QUESTION-3_RESULTS:  "${{steps.question-3.outputs.result}}"
         QUESTION-4_RESULTS:  "${{steps.question-4.outputs.result}}"
-        QUESTION-5_RESULTS:  "${{steps.question-5.outputs.result}}"
       with:
-          runners: 'question-0a,question-0b,question-1,question-2,question-3,question-4,question-5'
+          runners: 'question-0a,question-0b,question-1,question-2,question-3,question-4'
 
