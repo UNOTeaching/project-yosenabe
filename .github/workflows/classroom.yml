@@ -49,7 +49,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: 'Question 1'
-        setup-command: 'conda install python=3.9 --yes; conda install -c potassco clingo=5.7.1 --yes; conda init'
+        setup-command: 'conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main; conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r; conda install python=3.9 --yes; conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main; conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r; conda install -c potassco clingo=5.7.1 --yes; conda init'
         command: 'ls group.txt && [ -s group.txt ] && /usr/share/miniconda/bin/python3.9 autograder.py --clingo /usr/share/miniconda/bin/clingo --question=1'
         timeout: '10'
         max-score: '30'
